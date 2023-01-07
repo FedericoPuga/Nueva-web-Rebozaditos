@@ -1,0 +1,1551 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-home {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+main .botones-fijos .wp_fijo a {
+  font-size: 2.5rem;
+  background-color: #ffa500;
+  padding: 0px 10px 2px 10px;
+  border: rgb(255, 255, 255) solid 2px;
+  color: white;
+  border-radius: 50px;
+  bottom: 120px;
+  right: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+}
+
+main .botones-fijos .wp_fijo a i:hover {
+  color: rgb(255, 255, 255);
+  transform: rotate(360deg);
+  transition: 2s;
+}
+
+main .botones-fijos .subir i {
+  background-color: black;
+  font-size: 2.5rem;
+  padding: 8px 10px;
+  border: rgb(255, 255, 255) solid 2px;
+  color: rgb(255, 255, 255);
+  border-radius: 40px;
+  bottom: 30px;
+  right: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+}
+
+/* header */
+header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header .navbar-brand {
+  background-image: url(../img/logo.png);
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  background-position: center;
+  background-size: cover;
+}
+header .navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+header .navbar-collapse .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px #000000;
+}
+header .navbar-collapse .navbar-nav .nav-link:hover {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  -webkit-text-decoration: underline wavy orange 2px;
+          text-decoration: underline wavy orange 2px;
+}
+
+/* MEDIA QUERIE */
+@media only screen and (max-width: 575px) {
+  header .navbar-collapse {
+    display: block;
+  }
+}
+/* CARGA--------------------------------- */
+/* cargaaaa */
+#contenedor_carga {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: all 3s ease;
+  z-index: 1000000000000;
+}
+
+#carga {
+  border: 15px solid white;
+  border-top-color: orange;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite;
+}
+
+@-webkit-keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main {
+  /* -----------TIRA---------- */
+  /* --------------PRODUCTOS--------------- */
+  /* ----------efecto fotos productos--------- */
+  /* -----------COCCION------------- */
+  /* -----------NOSOTROS----------- */
+}
+main .foto {
+  background-image: url(../img/bast223.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 150px 0px 0px 30px;
+}
+main .foto h1 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 7rem;
+  line-height: 1;
+}
+main .foto h3 {
+  color: orange;
+  font-weight: 100;
+}
+main .foto button {
+  background-color: #ffa500;
+  padding: 5px;
+  border: none;
+}
+main .foto button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  -webkit-animation: myAnim 2s ease 0.1s 1 normal forwards;
+          animation: myAnim 2s ease 0.1s 1 normal forwards;
+}
+@-webkit-keyframes myAnim {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes myAnim {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+main .diagonales {
+  transform: rotate(358deg);
+  width: 100%;
+  position: absolute;
+  height: 20px;
+  background-color: orange;
+}
+main .diagonales .texto-diagonales {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+main .tira {
+  position: absolute;
+  transform: rotate(3deg);
+  width: 100%;
+}
+main .tira2 {
+  width: 100%;
+  position: absolute;
+  transform: rotate(358deg);
+}
+main #producto1 {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  margin-top: 70px;
+}
+main .producto1-foto {
+  grid-area: 1/1/2/2;
+  background-image: url(../img/cheddar.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+  transform: rotate(357deg);
+  box-shadow: 10px 10px 0px 1px #FFFFFF;
+}
+main .producto1-foto:hover {
+  -webkit-animation: myAnim 2s ease 0.1s 1 normal forwards;
+          animation: myAnim 2s ease 0.1s 1 normal forwards;
+}
+main .producto1-texto {
+  grid-area: 1/2/2/3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .producto1-texto h2 {
+  font-size: 4rem;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto1-texto h2 span {
+  color: #ffa500;
+}
+main .producto1-texto h3 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto1-texto p {
+  color: orange;
+}
+main .producto2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  margin-top: 70px;
+}
+main .producto2-foto {
+  grid-area: 1/1/2/2;
+  background-image: url(../img/cheddar.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+  transform: rotate(357deg);
+  box-shadow: 10px 10px 0px 1px #FFFFFF;
+}
+main .producto2-foto:hover {
+  -webkit-animation: myAnim 2s ease 0.1s 1 normal forwards;
+          animation: myAnim 2s ease 0.1s 1 normal forwards;
+}
+main .producto2-texto {
+  grid-area: 1/2/2/3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .producto2-texto h2 {
+  font-size: 4rem;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto2-texto h2 span {
+  color: #ffa500;
+}
+main .producto2-texto h3 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto2-texto p {
+  color: orange;
+}
+main .producto3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  margin-top: 70px;
+}
+main .producto3-foto {
+  grid-area: 1/1/2/2;
+  background-image: url(../img/cheddar.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+  transform: rotate(357deg);
+  box-shadow: 10px 10px 0px 1px #FFFFFF;
+}
+main .producto3-foto:hover {
+  -webkit-animation: myAnim 2s ease 0.1s 1 normal forwards;
+          animation: myAnim 2s ease 0.1s 1 normal forwards;
+}
+main .producto3-texto {
+  grid-area: 1/2/2/3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .producto3-texto h2 {
+  font-size: 4rem;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto3-texto h2 span {
+  color: #ffa500;
+}
+main .producto3-texto h3 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto3-texto p {
+  color: orange;
+}
+main .producto4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  margin-top: 70px;
+}
+main .producto4-foto {
+  grid-area: 1/1/2/2;
+  background-image: url(../img/cheddar.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: 70px 70px 100px 70px;
+  transform: rotate(357deg);
+  box-shadow: 10px 10px 0px 1px #FFFFFF;
+}
+main .producto4-foto:hover {
+  -webkit-animation: myAnim 2s ease 0.1s 1 normal forwards;
+          animation: myAnim 2s ease 0.1s 1 normal forwards;
+}
+main .producto4-texto {
+  grid-area: 1/2/2/3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .producto4-texto h2 {
+  font-size: 4rem;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto4-texto h2 span {
+  color: #ffa500;
+}
+main .producto4-texto h3 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+main .producto4-texto p {
+  color: orange;
+}
+main .masproductos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+main .masproductos button {
+  background-color: orange;
+  padding: 10px;
+  color: white;
+}
+main .masproductos button:hover {
+  background-color: transparent;
+  border: orange solid 1px;
+  font-weight: bold;
+}
+@keyframes myAnim {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+main #coccion .coccion-texto {
+  padding: 120px 0px 50px 100px;
+}
+main #coccion .coccion-texto h2 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1;
+  font-size: 4rem;
+}
+main #coccion .coccion-texto h2 span {
+  color: orange;
+}
+main #coccion .coccion-texto h4 {
+  color: orange;
+  font-weight: 100;
+}
+main #coccion .coccion-pasos {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "producto1 . . .";
+}
+main #coccion .coccion-pasos .paso1 {
+  background-color: white;
+  padding: 20px;
+  transform: rotate(357deg);
+  box-shadow: 8px 8px 0px 0.1px orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #coccion .coccion-pasos .paso2 {
+  background-color: white;
+  padding: 20px;
+  transform: rotate(3deg);
+  box-shadow: 8px 8px 0px 0.1px orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #coccion .coccion-pasos .paso3 {
+  background-color: white;
+  padding: 20px;
+  transform: rotate(357deg);
+  box-shadow: 8px 8px 0px 0.1px orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #coccion .coccion-pasos .paso4 {
+  background-color: white;
+  padding: 20px;
+  transform: rotate(3deg);
+  box-shadow: 8px 8px 0px 0.1px orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #coccion .coccion-pasos h3 {
+  color: orange;
+}
+main #coccion .coccion-pasos h3 span {
+  font-weight: bold;
+  color: black;
+}
+main #coccion .coccion-pasos p {
+  line-height: 1.2;
+  text-align: center;
+}
+main #nosotros {
+  background-color: rgb(0, 0, 0);
+  margin-top: 120px;
+}
+main #nosotros .texto-nosotros .titulo {
+  padding: 80px 30px 30px 30px;
+  text-align: center;
+}
+main #nosotros .texto-nosotros .titulo h2 {
+  color: orange;
+  font-weight: bold;
+  line-height: 1;
+  font-size: 4rem;
+}
+main #nosotros .texto-nosotros .titulo h2 span {
+  color: rgb(255, 255, 255);
+}
+main #nosotros .texto-nosotros .titulo h4 {
+  color: white;
+  font-weight: 400;
+}
+main #nosotros .valores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "fotovision vision" "proposito fotoproposito" "fotomision mision";
+}
+main #nosotros .proposito {
+  grid-area: proposito;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+main #nosotros .fotoproposito {
+  grid-area: fotoproposito;
+  background-image: url(/img/proposito.png);
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+  background-position: center;
+  margin: 0px 70px 100px 70px;
+}
+main #nosotros .mision {
+  grid-area: mision;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+main #nosotros .fotomision {
+  grid-area: fotomision;
+  background-image: url(/img/mision.png);
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+  background-position: center;
+  margin: 0px 70px 100px 70px;
+}
+main #nosotros .vision {
+  grid-area: vision;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+main #nosotros .fotovision {
+  grid-area: fotovision;
+  background-image: url(/img/vision.png);
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+  background-position: center;
+  margin: 0px 70px 100px 70px;
+}
+
+/* --------------------------------------------------SECCION PRODUCTOS------------------------------------------------------ */
+main .foto-productos {
+  background-image: url(../img/fotoproductos.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 150px 0px 0px 30px;
+  margin-top: 0px;
+}
+main .foto-productos h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 7rem;
+  line-height: 1;
+}
+main .foto-productos h1 span {
+  color: orange;
+}
+main .foto-productos h3 {
+  color: orange;
+  font-weight: 100;
+}
+main .foto-productos button {
+  background-color: white;
+  padding: 5px 20px;
+  border: none;
+}
+main .foto-productos button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  -webkit-animation: myAnim 2s ease 0.1s 1 normal forwards;
+          animation: myAnim 2s ease 0.1s 1 normal forwards;
+}
+@keyframes myAnim {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+/* solicita */
+.solicita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: black;
+}
+.solicita h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  line-height: 1;
+  background-color: white;
+  padding: 40px;
+  margin-top: 100px;
+  box-shadow: 10px 10px 0px 1px orange;
+}
+.solicita button {
+  background-color: orange;
+  font-size: 1rem;
+  margin-top: 40px;
+  padding: 10px 20px 10px 20px;
+  border: 0px;
+  color: rgb(0, 0, 0);
+}
+.solicita button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  -webkit-animation: myAnim 2s ease 0.1s 1 normal forwards;
+          animation: myAnim 2s ease 0.1s 1 normal forwards;
+}
+@keyframes myAnim {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+/* .main { */
+.productos {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.productos h2 {
+  text-align: center;
+  padding: 80px 0px 0px 0px;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+.productos h2 span {
+  color: orange;
+}
+.productos h3 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.productos h4 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+  font-weight: 400;
+  padding: 20px;
+  font-size: 1rem;
+}
+.productos h5 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+.productos .rebozaditos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "baston bastoncito bocadito-muza cheddar";
+}
+.productos .rebozaditos .baston {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .rebozaditos .baston .baston-foto {
+  grid-area: baston;
+  background-image: url(../img/baston.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .rebozaditos .bastoncito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .rebozaditos .bastoncito .bastoncito-foto {
+  grid-area: bastoncito;
+  background-image: url(../img/bastoncitos.png);
+  background-position: center;
+  background-size: cover;
+  padding-right: 0px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .rebozaditos .bocadito-muza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .rebozaditos .bocadito-muza .bocadito-muza-foto {
+  grid-area: bocadito-muza;
+  background-image: url(../img/bolitamuza.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .rebozaditos .cheddar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .rebozaditos .cheddar .cheddar-foto {
+  grid-area: cheddar;
+  background-image: url(../img/bastoncitos-cheddar.png);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .mccain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "smile noiset tradicional surecrisp";
+}
+.productos .mccain .smile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .mccain .smile .smile-foto {
+  grid-area: smile;
+  background-image: url(../img/smile.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .mccain .noiset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .mccain .noiset .noiset-foto {
+  grid-area: noiset;
+  background-image: url(../img/noiset.png);
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .mccain .tradicional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .mccain .tradicional .tradicional-foto {
+  grid-area: tradicional;
+  background-image: url(../img/tradicional.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .mccain .surecrisp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .mccain .surecrisp .surecrisp-foto {
+  grid-area: surecrisp;
+  background-image: url(../img/surecrisp.png);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 .mccain2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+  grid-auto-flow: row;
+  padding-top: 30px;
+  grid-template-areas: "cortefino aros";
+}
+.productos .artico1 .mccain2 .cortefino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .mccain2 .cortefino .cortefino-foto {
+  grid-area: cortefino;
+  background-image: url(../img/cortefino.png);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 .aros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .aros .aros-foto {
+  grid-area: aros;
+  background-image: url(../img/aros.png);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .tres-arroyos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "pochoclos patitas nuggets pechuga";
+}
+.productos .tres-arroyos .pochoclos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .tres-arroyos .pochoclos .pochoclos-foto {
+  grid-area: pochoclos;
+  background-image: url(../img/pochoclos.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .tres-arroyos .patitas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .tres-arroyos .patitas .patitas-foto {
+  grid-area: patitas;
+  background-image: url(../img/patitas-3-arroyos.png);
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .tres-arroyos .nuggets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .tres-arroyos .nuggets .nuggets-foto {
+  grid-area: nuggets;
+  background-image: url(../img/nugget-3-arroyos.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .tres-arroyos .pechuga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .tres-arroyos .pechuga .pechuga-foto {
+  grid-area: pechuga;
+  background-image: url(../img/pechuguitas.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .grangys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "nuggets2 patitas2 medallon medallonjyq";
+}
+.productos .grangys .nuggets2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .grangys .nuggets2 .nuggets2-foto {
+  grid-area: nuggets2;
+  background-image: url(../img/nuggets-grangys.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .grangys .patitas2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .grangys .patitas2 .patitas2-foto {
+  grid-area: patitas2;
+  background-image: url(../img/patitas-grangys.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .grangys .medallon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .grangys .medallon .medallon-foto {
+  grid-area: medallon;
+  background-image: url(../img/medallones-pollo-grangys.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .grangys .medallonjyq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .grangys .medallonjyq .medallonjyq-foto {
+  grid-area: medallonjyq;
+  background-image: url(../img/medallones-pollo-jamon-queso-grangys.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 .grangys2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+  grid-auto-flow: row;
+  padding-top: 30px;
+  grid-template-areas: "medallonesp bocaditocal bocaditoesp";
+}
+.productos .artico1 .grangys2 .medallonesp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .grangys2 .medallonesp .medallonesp-foto {
+  grid-area: medallonesp;
+  background-image: url(../img/medallones-pollo-espinaca-queso-grangys.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 .grangys2 .bocaditocal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .grangys2 .bocaditocal .bocaditocal-foto {
+  grid-area: bocaditocal;
+  background-image: url(../img/bocaditos-calabaza-grangys.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 .grangys2 .bocaditoesp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .grangys2 .bocaditoesp .bocaditoesp-foto {
+  grid-area: bocaditoesp;
+  background-image: url(../img/bocaditos-espinaca-grangys.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .artico {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "patitas3 tiritas nuggets3";
+}
+.productos .artico1 .artico .patitas3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .artico .patitas3 .patitas3-foto {
+  grid-area: patitas3;
+  background-image: url(../img/patitas-artico.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 .artico .tiritas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .artico .tiritas .tiritas-foto {
+  grid-area: tiritas;
+  background-image: url(../img/tiritas.png);
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .artico1 .artico .nuggets3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .artico1 .artico .nuggets3 .nuggets3-foto {
+  grid-area: nuggets3;
+  background-image: url(../img/nugget-artico.png);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .varios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "batter pan muza";
+}
+.productos .varios .batter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .varios .batter .batter-foto {
+  grid-area: batter;
+  background-image: url(../img/batter.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .varios .pan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .varios .pan .pan-foto {
+  grid-area: pan;
+  background-image: url(../img/pan-rallado.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .varios .muza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .varios .muza .muza-foto {
+  grid-area: muza;
+  background-image: url(../img/muza.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .aceite {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 100px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "premium economico oliva";
+}
+.productos .aceite .premium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .aceite .premium .premium-foto {
+  grid-area: premium;
+  background-image: url(../img/aceite.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+.productos .aceite .economico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .aceite .economico .economico-foto {
+  grid-area: economico;
+  background-image: url(../img/aceite.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+}
+.productos .aceite .oliva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productos .aceite .oliva .oliva-foto {
+  grid-area: oliva;
+  background-image: url(../img/oliva.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 320px;
+  height: 320px;
+}
+
+/* } */
+/* ---------------------------------------------------------media queries PRODUCTOS--------------------------------------------------------- */
+/* ---------------------------------------------------------media queries PRODUCTOS--------------------------------------------------------- */
+/* ---------------------------------------------------------media queries PRODUCTOS--------------------------------------------------------- */
+/* ---------------------------------------------------------media queries PRODUCTOS--------------------------------------------------------- */
+/* ---------------------------------------------------------media queries PRODUCTOS--------------------------------------------------------- */
+@media only screen and (max-width: 1454px) {
+  /*--------------- fotos rebo--------------- */
+  .productos .rebozaditos .baston .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .rebozaditos .bastoncito .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .rebozaditos .bocadito-muza .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .rebozaditos .cheddar .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /*-------------- fotos mccain1------------ */
+  .productos .mccain .smile .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .mccain .noiset .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .mccain .tradicional .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .mccain .surecrisp .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /*-------------- fotos mccain2------------ */
+  .productos .artico1 .mccain2 .cortefino .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .mccain2 .aros .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /* ----------fotos 3 arroyos----------- */
+  .productos .tres-arroyos .pochoclos .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .tres-arroyos .patitas .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .tres-arroyos .nuggets .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .tres-arroyos .pechuga .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /*------------- fotos grangys1-------------- */
+  .productos .grangys .nuggets2 .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .grangys .patitas2 .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .grangys .medallon .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .grangys .medallonjyq .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /*----------- fotos grangys2--------- */
+  .productos .artico1 .grangys2 .medallonesp .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .grangys2 .bocaditocal .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .grangys2 .bocaditoesp .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /* -----------fotos artico---------- */
+  .productos .artico1 .artico .patitas3 .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .artico .tiritas .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .artico .nuggets3 .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /*------------ fotos varios----------- */
+  .productos .artico1 .varios .batter .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .varios .pan .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .varios .muza .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  /* fotos aceites */
+  .productos .artico1 .aceite .premium .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .aceite .economico .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+  .productos .artico1 .aceite .oliva .foto-mq {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .productos .rebozaditos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 30px;
+    padding: 0px 180px 0px 180px;
+    grid-template-areas: "baston bastoncito" "bocadito-muza cheddar";
+  }
+  /*--------------- fotos rebo--------------- */
+  .productos .rebozaditos .baston .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .rebozaditos .bastoncito .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .rebozaditos .bocadito-muza .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .rebozaditos .cheddar .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /*-------------- fotos mccain1------------ */
+  .productos .mccain {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 30px;
+    padding: 0px 180px 0px 180px;
+    grid-template-areas: "smile noisete" "tradicional surecrisp";
+  }
+  .productos .mccain .smile .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .mccain .noiset .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .mccain .tradicional .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .mccain .surecrisp .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /*-------------- fotos mccain2------------ */
+  .productos .artico1 .mccain2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px 135px;
+    /* padding: 0px 180px 0px 180px; */
+    grid-template-areas: "cortefino aros";
+  }
+  .productos .artico1 .mccain2 .cortefino .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .mccain2 .aros .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /* ----------fotos 3 arroyos----------- */
+  .productos .tres-arroyos .pochoclos .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .tres-arroyos .patitas .foto-mq {
+    width: 220px;
+    height: 250px;
+  }
+  .productos .tres-arroyos .nuggets .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .tres-arroyos .pechuga .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /*------------- fotos grangys1-------------- */
+  .productos .grangys .nuggets2 .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .grangys .patitas2 .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .grangys .medallon .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .grangys .medallonjyq .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /*----------- fotos grangys2--------- */
+  .productos .artico1 .grangys2 .medallonesp .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .grangys2 .bocaditocal .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .grangys2 .bocaditoesp .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /* -----------fotos artico---------- */
+  .productos .artico1 .artico .patitas3 .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .artico .tiritas .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .artico .nuggets3 .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /*------------ fotos varios----------- */
+  .productos .artico1 .varios .batter .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .varios .pan .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .varios .muza .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  /* fotos aceites */
+  .productos .artico1 .aceite .premium .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .aceite .economico .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+  .productos .artico1 .aceite .oliva .foto-mq {
+    width: 250px;
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
